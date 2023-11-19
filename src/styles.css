@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  &,
+  &.light-mode {
+    --bg-desktop-image: url("assets/images/bg-desktop-light.jpg");
+    --bg-mobile-image: url("assets/images/bg-mobile-light.jpg");
+    --bg-color: hsl(0, 0%, 98%);
+    --bg-todo-color: rgba(250, 250, 250, 1);
+    --shadow-color: rgba(194, 195, 214, 0.5);
+    --btn-color: rgba(227, 228, 241, 1);
+    --text-color-100: rgba(57, 58, 75, 1);
+    --text-color-200: rgba(148, 149, 165, 1);
+    --text-color-300: rgba(73, 76, 107, 1);
+    --text-color-400: rgba(148, 149, 165, 1);
+    --text-color-500: rgba(73, 76, 107, 1);
+    --text-color-600: rgba(209, 210, 218, 1);
+    --error-color: #d00000;
+  }
+
+  &.dark-mode {
+    --bg-desktop-image: url("assets/images/bg-desktop-dark.jpg");
+    --bg-mobile-image: url("assets/images/bg-mobile-dark.jpg");
+    --bg-color: rgba(23, 24, 35, 1);
+    --bg-todo-color: rgba(37, 39, 61, 1);
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --btn-color: rgba(57, 58, 75, 1);
+    --text-color-100: rgba(200, 203, 231, 1);
+    --text-color-200: rgba(118, 121, 146, 1);
+    --text-color-300: rgba(200, 203, 231, 1);
+    --text-color-400: rgba(91, 94, 126, 1);
+    --text-color-500: rgba(227, 228, 241, 1);
+    --text-color-600: rgba(77, 80, 103, 1);
+    --error-color: #9e2a2b;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.625rem;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "completed": true,
+    "text": "Complete online JavaScript course",
+    "id": 1
+  },
+  {
+    "completed": null,
+    "text": "Jog around the park x3",
+    "id": 2
+  },
+  {
+    "completed": null,
+    "text": "10 minutes meditation",
+    "id": 3
+  },
+  {
+    "completed": null,
+    "text": "Read for 1 hour",
+    "id": 4
+  },
+  {
+    "completed": null,
+    "text": "Pick up groceries",
+    "id": 5
+  },
+  {
+    "completed": null,
+    "text": "Complete Todo App on Frontend Mentor",
+    "id": 6
+  }
+]
