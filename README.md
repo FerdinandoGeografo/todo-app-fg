@@ -46,8 +46,8 @@ Users should be able to:
 
 - HTML 5
 - CSS & Flexbox
-- Angular (17) - [Angular](https://angular.dev/)
-- RxJS - [RxJS](https://rxjs.dev/)
+- [Angular v.17](https://angular.dev/)
+- [RxJS](https://rxjs.dev/)
 
 ### What I learned
 
