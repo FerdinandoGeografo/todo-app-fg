@@ -33,16 +33,21 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![https://todo-app-fg.netlify.app/](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/FerdinandoGeografo/todo-app-fg](https://github.com/FerdinandoGeografo/todo-app-fg)
+- Live Site URL: [https://todo-app-fg.netlify.app/](https://todo-app-fg.netlify.app/)
 
 ## My process
 
 ### Built with
+
+- HTML 5
+- CSS & Flexbox
+- Angular (17) - [Angular](https://angular.dev/)
+- RxJS - [RxJS](https://rxjs.dev/)
 
 ### What I learned
 
@@ -50,4 +55,10 @@ Users should be able to:
 
 ### Useful resources
 
+- new Angular website : [Angular Beta Docs](https://angular.dev/)
+
 ## Author
+
+- LinkedIn - [@FerdinandoGeografo](https://www.linkedin.com/in/ferdinandogeografo/)
+- GitHub - [@FerdinandoGeografo](https://github.com/FerdinandoGeografo/job-listings-with-filtering)
+- Frontend Mentor - [@FerdinandoGeografo](https://www.frontendmentor.io/profile/FerdinandoGeografo)
