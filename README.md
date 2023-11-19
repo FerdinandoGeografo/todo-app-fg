@@ -51,11 +51,15 @@ Users should be able to:
 
 ### What I learned
 
+In this challenge I wanted to approach the new version of Angular for the first time using the brand new features offered such as control flow, stable signal management and much more. I also wanted to try a different pattern compared to previous versions where I used both Observables for CRUD operations (which in the future can call real APIs of a backend rather than managing data from localStorage), and Signals for managing internal state .
+
 ### Continued development
+
+Having the aim of practicing with the new version of Angular, for the moment I did not want to realize the bonus points of the challenge such as drag and drop and management of the application as a full-stack-application, however they will be points that I will delve into later.
 
 ### Useful resources
 
-- new Angular website : [Angular Beta Docs](https://angular.dev/)
+- [Angular Beta Docs](https://angular.dev/)
 
 ## Author
 
