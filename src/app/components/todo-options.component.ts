@@ -79,7 +79,7 @@ import { take } from 'rxjs';
       font-weight: 400;
     }
 
-    .option-btn:hover {
+    .option-btn:hover, .option-btn:focus {
       color: var(--text-color-500);
     }
 
