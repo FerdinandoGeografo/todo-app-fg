@@ -29,7 +29,10 @@ export class TodosStorageService {
   createTodo(todo: Todo): Observable<Todo> {
     return this.todosSource.pipe(
       map((todos) => {
-        const newTodo: Todo = { ...todo, id: todos.length + 1 };
+        const newTodo: Todo = {
+          ...todo,
+          id: todos.length ? todos[todos.length - 1].id! + 1 : 1,
+        };
         localStorage.setItem(this.dataKey, JSON.stringify([...todos, newTodo]));
         return newTodo;
       })
@@ -39,9 +42,10 @@ export class TodosStorageService {
   updateTodo(todo: Todo): Observable<Todo> {
     return this.todosSource.pipe(
       map((todos) => {
+        console.log('todo: ', todo);
         localStorage.setItem(
           this.dataKey,
-          JSON.stringify(todos.filter((t) => (t.id === todo.id ? todo : t)))
+          JSON.stringify(todos.map((t) => (t.id === todo.id ? todo : t)))
         );
         return todo;
       })

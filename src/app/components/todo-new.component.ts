@@ -1,7 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodosService } from '../services/todos.service';
-import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import { Todo } from '../models/todo';
 import { take, tap } from 'rxjs';
 
@@ -112,8 +117,8 @@ export class TodoNewComponent {
   fb = inject(FormBuilder);
 
   newTodoForm = this.fb.group({
-    completed: [false],
-    text: ['', [Validators.required, Validators.minLength(2)]],
+    completed: new FormControl(false),
+    text: new FormControl('', [Validators.required, Validators.minLength(2)]),
   });
 
   onSubmit() {
@@ -123,7 +128,7 @@ export class TodoNewComponent {
       .createTodo(this.newTodoForm.value as Todo)
       .pipe(
         take(1),
-        tap(() => this.newTodoForm.reset())
+        tap(() => this.newTodoForm.reset({ completed: false, text: '' }))
       )
       .subscribe();
   }
